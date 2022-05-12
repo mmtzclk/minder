@@ -346,7 +346,7 @@ const EditProfileForm = styled.form`
 const StyledSettings = styled.div`
   margin-top: 20px;
   display: flex;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1540px) {
     flex-direction: column;
   }
 `;
@@ -453,7 +453,9 @@ const Image = styled.div`
 const Info = styled.div`
   margin-left: 20px;
   position: relative;
-  min-width: 100vw;
+  @media screen and (max-width: 768px) {
+    min-width: 80vw;
+  }
 `;
 const Username = styled.div`
   @media screen and (max-width: 1024px) {
@@ -489,7 +491,7 @@ const Buttons = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1540px) {
     bottom: -150px;
     align-items: center;
     justify-content: center;
@@ -578,8 +580,6 @@ const StyledContent = styled.div`
   @media screen and (max-width: 1440px) {
     padding: 20px 2vw;
   }
-  @media screen and (max-width: 1024px) {
-  }
   @media screen and (max-width: 768px) {
     padding: 10px 60px;
   }
@@ -622,7 +622,9 @@ const LogoMobile = styled.div`
 `;
 
 const EditDesc = styled.div`
-  margin-left: 3rem;
+  @media screen and (min-width: 1540px) {
+    margin-left: 3rem;
+  }
   @media screen and (max-width: 1024px) {
     margin-left: 0;
   }
